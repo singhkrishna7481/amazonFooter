@@ -1,123 +1,247 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>heart_less_user</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Amazon Footer</title>
     <style>
-     #outer
-     {
-      width:1500px;
-      height:1200px;
-      border:3px solid rgb(5, 5, 5);
-      margin:0 auto;
-      border-radius:20px;
-     }
-     #menu
-     {
-        width:1500px;
-        height:50px;
-        background-color:rgb(54, 51, 233);
-        border-radius:20px 20px 0px 0px;
-        border:1px solid white;
-     }
-     #menu ul
-     {
-           list-style-type: none;
-     }
-     #menu ul li
-     {
-        display:inline ;
-     }
-     #menu ul li a
-     {
-        padding:80px;
-        font-size:20px;
-        text-decoration:none;
-        color:black
-     }
-     #slider
-     {
-        width:1500px;
-        height:250px;
-        background-color:rgb(6, 40, 78);
-        margin-top:5px;
-     }
-     #parent
-     {
-      width:1500px;
-      height:600px;
-      margin-top:5px;
-     }
-     #left
-     {
-       width:500px;
-       height:600px;
-       background-color:rgb(36, 190, 113);
-       float:left;
-       border-radius:0px 0px 0px 20px;
-     }
-     #middle
-     {
-       width:500px;
-       height:600px;
-       background-color:rgb(252, 120, 120);
-       float:left;
-     }
-     #right
-     { width:500px;
-       height:600px;
-       background-color:rgb(184, 255, 70);
-       float:left;
-       border-radius:0px 0px 20px 0px;
-     }
-     #footer
-     {
-     width: 1500px;
-     height:278px;
-     border-radius:20px;
-     background-color:rgb(92, 16, 122);
-     margin-top:10px;
+        
+        body{
+            margin: auto;
+            padding: auto;
+            color: white;
+        }
+        
 
-     }
+        menu
+        {
+            padding: .2%;
+            background-color: #485769;
+            text-align: center;
+        }
+        menu:hover{
+            background-color: #39434f;
+            cursor: pointer;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .7rem;;
+            word-wrap: break-word;
+            line-height: 2;
+        }
+        span
+        {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .8rem;
+        }
+        a:hover
+        {
+            text-decoration: underline;
+        }
+        footer
+        {
+            background-color: #232f3e;
+            /* width: 100%; */
+            height: 65%;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center;
+            gap: 10%;
+            margin: 3%;
+        }
+        hr
+        {
+            opacity: 0.2;
+        }
+        .lang-menu
+        {
+            display: flex;
+            justify-content: center;
+            gap: 3%;
+            margin: 2%;
+        }
+        #amz{
+            height: 30px;
+        }
+        select{
+            width: 55%;
+            background-color: transparent;
+            color: white;
+            transition: all .5s ease;
+            border: .5x solid white;
+        }
+        select:focus
+        {
+            background-color: #232f3e;
+        }
+        
+        .location
+        {
+            display: flex;
+            justify-content: center;
+            margin: 1%;
+            text-align: center;
+        }
+        .location a{
+            font-size: .6rem;
+            padding: .6%;
+            
+        }
+        .container-2
+        {
+            background-color: #131a22;
+            height: 35%;
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            gap: 10%;
+        }
+        .sub-container
+        {
+            /* width: 80%; */
+            display: flex;
+            justify-content: center;
+            gap: 12%;
+            margin: 1%;
+        }
+        .sub-container span
+        {
+            font-size: 1em;
+        }
+        
+        .sub-container a{
+            opacity: .6;
+            font-size: .6rem;
+        }
+        .copyright
+        {
+            text-align: center;
+        }
+        .copyright div
+        {
+            display: flex;
+            justify-content: center;
+            gap: 1%;
+        }
+        .copyright div a
+        {
+            opacity: .7;
+            font-size: .6rem;
+        }
     </style>
 </head>
-<body bgcolor="darkgrey">
- <div id="outer">
-     <div id="menu">
-        <ul>
-            <li><a href="index.html">  Home </a> </li>
-            <li><a href="aboutus.html"> About us </a> </li>
-            <li><a href="registration.html"> Registration </a> </li>
-            <li><a href="login.html"> Login </a> </li>
-            <li><a href="contactus.html"> Contact Us </a> </li>
-            <li><a href="success.html"> Students </a> </li>
-        </ul>
+<body>
+    <footer>
+        <menu >
+            <div>
+                <a href="#">Back to top</a>
+            </div>
+        </menu>
+        <div class="container">
+            <div class="links">
+                <span>Get to Know Us</span><br>
+                <a href="#">About Us</a><br>
+                <a href="#">Careers</a><br>
+                <a href="#">Press Releases</a><br>
+                <a href="#">Amazon Science</a><br>
+            </div>
+            <div class="links">
+                <span>Connect with Us</span><br>
+                <a href="#">Facebook</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Instagram</a><br>
+            </div>
+            <div class="links">
+                <span>Make Money with Us</span><br>
+                <a href="#">Sell on Amazon</a><br>
+                <a href="#">Sell under Amazon Accelerator</a><br>
+                <a href="#">Protect and Build Your Brand</a><br>
+                <a href="#">Amazon Global Selling</a><br>
+                <a href="#">Become an Affiliate</a><br>
+                <a href="#">Fulfilment by Amazon</a><br>
+                <a href="#">Advertise Your Products</a><br>
+                <a href="#">Amazon Pay on Merchants</a><br>
+            </div>
+            <div class="links">
+                <span>Let Us Help You</span><br>
+                <a href="#">COVID-19 and Amazon</a><br>
+                <a href="#">Your Account</a><br>
+                <a href="#">Returns Centre</a><br>
+                <a href="#">100% Purchase Protection</a><br>
+                <a href="#">Amazon App Download</a><br>
+                <a href="#">Help</a><br>
+            </div>
+        </div>
+        <hr>
+        <div class="lang-menu">
+            <div>
+                <a href="#"><img src="amz.png" alt="" id="amz"></a>
+            </div>
+            <div>
+                <select name="lang" id="lang">
+                    <option value="eng">English</option>
+                    <option value="eng">हिन्दी - HI - अनुवाद</option>
+                    <option value="eng">தமிழ் - TA - மொழிபெயர்ப்பு</option>
+                    <option value="eng">తెలుగు - TE - అనువాదం</option>
+                    <option value="eng">ಕನ್ನಡ - KN - ಭಾಷಾಂತರ</option>
+                    <option value="eng">മലയാളം - ML - വിവർത്തനം</option>
+                    <option value="eng">বাংলা - BN - অনুবাদ</option>
+                    <option value="eng">मराठी - MR - भाषांतर</option>
+                </select>
+            </div>
+        </div>
 
-
-     </div>
-     <div id="slider">
-      <img src="img/anc_logo.png" width="1500px" height="250px" />
-
+        <div class="location">
+            <div>
+                <a href="#">Australia</a>
+                <a href="#">Brazil</a>
+                <a href="#">Canada</a>
+                <a href="#">China</a>
+                <a href="#">France</a>
+                <a href="#">Germany</a>
+                <a href="#">Italy</a>
+                <a href="#">Japan</a>
+                <a href="#">Mexico</a>
+                <a href="#">Netherlands</a>
+                <a href="#">Poland</a>
+                <a href="#">Singapore</a>
+                <a href="#">Spain</a>
+                <a href="#">Turkey</a>
+                <a href="#">United Arab Emirates</a>
+                <a href="#">United Kingdom</a>
+                <a href="#">United States</a>
+            </div>
+        </div>
+    </footer>
+    <div class="container-2">
+        <div class="sub-container">
+            <a href="#"><span>AbeBooks</span> <br>Books, art & collectibles</a>
+            <a href="#"><span>Amazon Web Services </span><br>Scalable Cloud Computing Services</a>
+            <a href="#"><span>Audible</span><br>Download Audio Books</a>
+            <a href="#"><span>IMDb</span><br>Movies, TV & Celebrities</a>
+        </div>
+        <div class="sub-container">
+            <a href="#"><span>Shopbop</span> <br>Designer Fashion Brands</a>
+            <a href="#"><span>Amazon Business</span><br> Everything For Your Business</a>
+            <a href="#"><span>Prime Now</span><br>2-Hour Delivery on Everyday Items</a>
+            <a href="#"><span>Amazon Prime Music</span><br>100 million songs, ad-free Over 15 million podcast episodes</a>
+        </div>
+        
+        <div class="copyright">
+            <div>
+                <a href="#">Conditions of Use & Sale</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Interest-Based Ads</a>
+            </div>
+            <div>
+                <a href="#">© 1996-2023, Amazon.com, Inc. or its affiliates</a>
+            </div>
+        </div>
     </div>
-    <div id = "parent">
-            <div id = "left">
-                 
-            </div>
-    
-            <div id = "middle">
-    
-            </div>
-    
-            <div id = "right">
-    
-            </div>
-            
-    </div> 
-    <div id = "footer"></div>
-
-
-     <font face="ALGERIAN" SIZE="30" COLOR:"PINK"> <h1 style="text-align:center"><u><i> krishna</i></u></h1></font>
-
-      </div>
 </body>
 </html>
